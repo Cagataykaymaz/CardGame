@@ -56,5 +56,5 @@ public abstract class Player {
         this.playerName = playerName;
     }
     
-    public abstract void kartSecim(int deger);
+    public abstract void cardSelection(int cardValue);
 }

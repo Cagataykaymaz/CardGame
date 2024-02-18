@@ -1,8 +1,7 @@
 
 package com.pokemon.game.views;
 
-import com.pokemon.game.PlayMenu;
-import com.pokemon.game.Pokemon;
+import com.pokemon.game.controller.Pokemon;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -37,9 +36,9 @@ public class LoginMenu extends JPanel implements ActionListener{
 
     public void setBackGround(){
         userName ="Pc";
-        oyuncuVsPcButton =new JButton("oyuncu vs pc",new ImageIcon("oyuncuResim.png"));
-        pcVsPcButton =new JButton("pc vs pc",new ImageIcon("bilgisayarResim.jpg"));
-        loginMenu =new JLabel(new ImageIcon(new ImageIcon("girismenuResim.jpg").getImage().getScaledInstance(1366, 768, Image.SCALE_SMOOTH)));
+        oyuncuVsPcButton =new JButton("oyuncu vs pc",new ImageIcon("players/playerImage.png"));
+        pcVsPcButton =new JButton("pc vs pc",new ImageIcon("players/pcImage.jpg"));
+        loginMenu =new JLabel(new ImageIcon(new ImageIcon("menuViews/loginMenu.jpg").getImage().getScaledInstance(1366, 768, Image.SCALE_SMOOTH)));
         setLayout(null);
     }
 
@@ -71,7 +70,7 @@ public class LoginMenu extends JPanel implements ActionListener{
            
         }
         
-        PlayMenu yertutma=new PlayMenu(pack, hasUser, screen, userName);
+        PlayMenu playMenu=new PlayMenu(pack, hasUser, screen, userName);
     }
 
     

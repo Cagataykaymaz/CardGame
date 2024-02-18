@@ -5,8 +5,8 @@
  */
 package com.pokemon.game.views;
 
-import com.pokemon.game.models.PcPlayer;
-import com.pokemon.game.models.UserPlayer;
+import com.pokemon.game.models.players.PcPlayer;
+import com.pokemon.game.models.players.UserPlayer;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -39,7 +39,7 @@ public class ResultMenu extends JPanel {
             }
         }
         
-        else if(oyuncuVarmi==false)
+        else
         {
             
             if(oyuncu2.getPlayerScore()>oyuncu1.getPlayerScore())
